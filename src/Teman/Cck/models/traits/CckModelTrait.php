@@ -3,7 +3,7 @@
 
 use Illuminate\Support\Facades\DB;
 
-trait CckTrait{
+trait CckModelTrait{
 
 
     public function columns(){

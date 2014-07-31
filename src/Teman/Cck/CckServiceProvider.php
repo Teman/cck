@@ -1,7 +1,5 @@
 <?php namespace Teman\Cck;
 
-use Illuminate\Support\Facades\Config;
-use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
 class CckServiceProvider extends ServiceProvider {
@@ -22,7 +20,6 @@ class CckServiceProvider extends ServiceProvider {
 	{
 		$this->package('teman/cck');
 
-        View::share('cckMasterView', Config::get('cck::masterView'));
 	}
 
 	/**
@@ -33,6 +30,8 @@ class CckServiceProvider extends ServiceProvider {
 	public function register()
 	{
 		//
+
+        $this->app->register('Laracasts\Validation\ValidationServiceProvider');
 
 	}
 

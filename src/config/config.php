@@ -1,7 +1,8 @@
 <?php  return array(
 
 
-    'masterView' => 'cms::template.layout'
+    'masterView' => 'cms::template.layout',
+    'masterViewSection' => 'content'
 
 
 );
