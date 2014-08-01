@@ -1,5 +1,9 @@
 <?php namespace Teman\Cck\Controllers;
 
+
+//TODO detect if softDeleting is used on model and add an 'trash' view
+
+
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Config;
